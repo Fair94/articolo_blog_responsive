@@ -1,0 +1,294 @@
+/* IMPOSTAZIONI GENERALI */
+hr{display: none;}
+@media screen and (min-width: 450px) {
+    main{
+       display:flex;
+       flex-direction:row;
+       justify-content: space-evenly;
+        
+    }
+
+    aside{
+        width: 38%;
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width: 449px){
+
+main iframe{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    
+}
+}
+
+body{
+    background-image: url("../img/sfondo.png");
+    background-position: center;
+}
+/* HEADER */
+header{
+font-family: 'Poppins', sans-serif;
+text-align: center;
+text-transform: uppercase;
+font-weight:bold ;
+background: linear-gradient(180deg, rgba(0,185,185,1) 0%, rgba(0,96,116,1) 50%, rgba(0,111,134,1) 100%);
+;
+padding: 3rem;
+line-height: 2rem;
+color: white;
+margin: 1.5rem;
+
+box-shadow: 0 3px   rgba(0, 0, 0, 0.63);
+}
+
+nav ul li
+{
+    list-style:none;
+    display: inline;
+}
+
+ nav ul li a{
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* MAIN */
+main{
+    margin: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2rem;
+    
+    
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+main article{
+    background-color: white;
+    padding: 2rem;
+    border-left: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+    box-shadow: 0 5px lightgray;
+}
+main article h1{
+    padding-top: 2.5rem ;
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+ 
+
+
+main article p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+main article p:first-of-type{
+    color: lightgray;
+}
+
+
+main article strong{
+   color: darkviolet;
+ 
+}
+
+main article code{
+    background-color: lightgray;
+    border: 1px;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+nav ul li a::before{
+    content:"\2605";
+
+}
+/* TABELLE */
+caption{
+    font-style: italic;
+    font-weight:bold ;
+}
+
+table{
+    text-align: center;
+    
+}
+
+table thead {
+    
+    background-color: cornflowerblue;
+    color:white;
+    
+    
+}
+
+table th{
+    padding: 0.5rem;
+}
+
+table thead :nth-child(2){
+    border-right: 1px dotted lightgray;
+    border-left: 1px dotted lightgray ;
+}
+
+table td{
+
+    padding: 0.5rem;
+
+}
+
+ table tbody tr:nth-child(odd){
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background-color: lightgray;
+}
+
+main a{
+    color:cadetblue;
+}
+
+iframe{
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    
+}
+/* FORM */
+section{
+    background-color: lightgray;
+    margin-top: 2rem;
+    color: black;
+
+}
+
+section h2{
+
+    background-color: lightgray;
+    width: 7rem;
+
+    position: relative;
+    top: -1rem;
+    left: 1rem;
+
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    border: 1px solid black;
+    box-shadow: 1px 1px rgb(97, 97, 97);
+
+}
+
+main article  p:last-of-type{
+    padding: 1rem;
+    color: black;
+}
+
+form{
+    padding: 1rem;
+  
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px dashed black;
+    height: 1.5rem;
+}
+
+form button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color:cadetblue;
+    height: 1.5rem;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside{
+    background-color: white;
+    padding: 2rem;
+    border-left: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+    box-shadow: 0 5px lightgray;
+}
+
+aside h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+aside div{
+    border: 1px solid gray;
+    background-color: lightgray;
+    margin: 1rem;
+}
+
+
+
+ main aside div p{
+    color: black;
+}
+
+aside p:last-child{
+    
+    left: 10rem;
+    bottom: 1px;
+}
+/* FOOTER */
+footer{
+    margin:1rem;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+text-align: center;
+
+background: linear-gradient(180deg, rgba(0,185,185,1) 0%, rgba(0,96,116,1) 50%, rgba(0,111,134,1) 100%);
+color: white;
+line-height: 2rem;
+}
+
+footer p{
+  padding:0.5rem;
+}
+
+footer a{
+    color: blueviolet;
+}
+
+.far{
+    
+    position: relative;
+   float: right;
+   right: 0px;
+   bottom: 0px;
+   
+
+}
+
+ a :last-child{
+    display: block;
+    color: red;
+    font-size: 40px;
+   
+}
